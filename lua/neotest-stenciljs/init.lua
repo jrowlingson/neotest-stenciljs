@@ -385,7 +385,7 @@ function adapter.build_spec(args)
     "--json",
     "--testLocationInResults",
     string.format("--outputFile='%s'", results_path),
-    string.format("--testNamePattern='%s'", test_name_pattern),
+    string.format("--testNamePattern=%s", test_name_pattern),
     "--",
     pos.path,
   })
