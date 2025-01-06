@@ -384,7 +384,7 @@ function adapter.build_spec(args)
     "--verbose",
     "--json",
     "--testLocationInResults",
-    string.format("--outputFile='%s'", results_path),
+    string.format("--outputFile=%s", results_path),
     string.format("--testNamePattern=%s", test_name_pattern),
     "--",
     pos.path,
